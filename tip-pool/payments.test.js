@@ -70,7 +70,7 @@ describe("Payments test (with setup and tear-down)", function() {
     // clear the payments table
     const paymentTableBody = document.querySelector('#paymentTable tBody');
     const paymentTableRows = paymentTableBody.querySelectorAll('tr');
-    for(row of paymentTableRows){
+    for(let row of paymentTableRows){
       row.remove();
     }
     // reset the shift summary
